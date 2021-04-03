@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import Pasta from "./projects/Pasta";
 
 function App() {
   return (
     <div className="App">
-      <h1>hi</h1>
+      <Pasta />
     </div>
   );
 }
