@@ -16,6 +16,7 @@ const Pasta = () => {
 const style = css`
   box-sizing: border-box;
   margin: 0;
+  font-size: 16px;
 `;
 
 export default Pasta;

@@ -25,6 +25,7 @@ const Item = ({ src, alt, title, des, even }: ItemProps) => {
 const style = css`
   margin: 5%;
   display: flex;
+  align-items: center;
   :nth-child(odd) {
     text-align: left;
     justify-content: flex-start;
@@ -47,7 +48,7 @@ const style = css`
   }
   img {
     width: 20rem;
-    height: auto;
+    height: 20rem;
     object-fit: cover;
   }
   .des {
@@ -56,12 +57,33 @@ const style = css`
     flex-direction: column;
     justify-content: center;
     h2 {
+      width: 100%;
       margin: 0.5rem 0;
       font-size: 2.4rem;
     }
     p {
+      width: 100%;
       margin: 0.2rem 0;
       font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    .des {
+      width: 100%;
+    }
+    img {
+      height: fit-content;
+    }
+    :nth-child(even) {
+      flex-direction: column-reverse;
+    }
+    img {
+      margin: 0 !important;
     }
   }
 `;
