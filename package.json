@@ -2,6 +2,7 @@
   "name": "design-practice",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sjsjsj1246.github.io/design_practice/",
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@fontsource/dancing-script": "^4.2.2",
@@ -13,6 +14,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -23,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
